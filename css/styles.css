@@ -3,8 +3,49 @@ body{
     font-size: 16px;
     background-color: #FFFFFF;
     color: #434455;
-    line-height: 1.5;
+    line-height: 1.5;  
+    box-sizing: border-box;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+
+
+.main-container{
+    max-width: 1158px;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between ;
+}
+
+
+
+ 
+
+
 .logo {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -16,37 +57,57 @@ body{
 }
 .logo .color{
     color: #2e2f42;
+
 }
-.page-nav .link{
+
+.container-header{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+ .page-nav{
+    list-style: none;
+    display: flex;
+   
+   
+ }
+
+.page-nav-link{
     color: #2e2f42;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 16px 8px;
 }
-.page-nav .link{
-    color: #2e2f42;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-}
-.page-nav .link:hover, .page-nav .link:focus{
+
+.page-nav-link:hover, .page-nav-link:focus{
     color: #404bbf;
 }
-.page-nav .link:hover, .page-nav .link:focus{
-    color: #404bbf;
-}
-.page-nav .link:active{
+
+.page-nav-link:active{
     color:#404bbf;
+    
+    
 }
 .address{
     font-style: normal;
 }
 
-.address .link{
+.list-address{
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+
+}
+
+
+.address-link{
     color: #434455;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 16px 8px;
     
 
 }
@@ -58,14 +119,18 @@ body{
 .section-one{
    background-color: #2e2f42;
 }
-.section-one .title{
+.section-one-title{
     color: #ffffff;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    letter-spacing: 0.02em
-
+    letter-spacing: 0.02em;
+   
+    
 }
+
+
+
 .button{
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -79,14 +144,33 @@ body{
 .button:hover, .button:focus{
   background-color: #404bbf;
 }
-.strategy{
+
+.section-two {
+    background-color: #F4F4FD;
+}
+
+.title-section-two {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap; 
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+
+.subtitle-section-two{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-.paragraph{
+.text-section-two{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -94,14 +178,21 @@ body{
 
 }
 
-.section{
-    background-color: #F4F4FD;
+.title-section-three {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
 }
+
+
 .time-card{
     background-color: #FFFFFF;
     
 }
-.name{
+.subtitle-section-three{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -109,38 +200,32 @@ body{
    color: #2e2f42; 
 }
 
-.section .our-time{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
 
-}
-.position{
+.text-section-three{
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;}
+      
+ .title-section-four {
+     font-size: 36px;
+     line-height: 1.11;
+     text-align: center;
+     letter-spacing: 0.02em;
+     text-transform: capitalize;
+     color: #2e2f42;
+ }
     
  
- .description{
+ .subtitle-section-four{
     font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
         font-weight: 500;
     }
- .our-portfolio{
-    font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #2e2f42;
- }
- .paragraph-two{
+
+ .text-section-four{
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -165,7 +250,7 @@ body{
 .color-footer-logo{
     color: #f4f4fd;
 }
-.paragraph-footer{
+.text-footer{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
