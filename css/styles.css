@@ -38,20 +38,16 @@ img {
     display: block;
 }
 
-
-
 .container{
-    width: 1188px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
-
-
-
-
- 
-
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .logo {
     color: #4d5ae5;
@@ -85,8 +81,9 @@ padding: 16px 8px;
     gap: 40px;
 }
 
-.container-header{
+.nav-header{
  display: flex;
+align-items: center;
 }
 
 
@@ -95,7 +92,7 @@ padding: 16px 8px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 16px 8px;
+    padding: 24px 0
 }
 
 .page-nav-link:hover, .page-nav-link:focus{
@@ -114,6 +111,7 @@ padding: 16px 8px;
 .list-address{
    list-style: none;
    display: flex;
+gap: 40px;
 
 }
 
