@@ -216,7 +216,6 @@ overflow: hidden;
 
 .item-section-maine:first-child{
     width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -265,8 +264,13 @@ overflow: hidden;
 
 .list-section-time:first-child{   
      flex-basis: calc((100% - 3 * 24px) / 4); 
-    border-radius: 0px 0px 4px 4px;
+   
     }
+
+ .list-section-time:first-child{
+    border-radius: 0px 0px 4px 4px;
+
+ }
 
 
 
