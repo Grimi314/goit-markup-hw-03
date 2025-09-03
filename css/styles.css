@@ -132,12 +132,12 @@ gap: 40px;
 }
 
 
-.section-one{
+.section{
    background-color: #2e2f42;
    padding-bottom: 188px;
    padding-top: 188px;
 }
-.section-one-title{
+.section-future-title{
     color: #ffffff;
     font-size: 56px;
     line-height: 1.07;
@@ -163,13 +163,22 @@ gap: 40px;
     line-height: 1.5;
     margin: 0 auto;
     display: block;
-    
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .button:hover, .button:focus{
   background-color: #404bbf;
 }
 
-.section-two {
+.section-maine{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.title-section-maine{
     background-color: #F4F4FD;
     padding-top: 60px;
     padding-bottom: 102px;
@@ -178,7 +187,7 @@ gap: 40px;
     
 }
 
-.title-section-two {
+.title-section-maine{
 position: absolute;
 width: 1px;
 height: 1px;
@@ -191,37 +200,47 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-.list-section-two{
+.list-section-maine{
     display: flex;
     gap: 24px;
 
 }
 
-.item-section-two{
+.item-section-maine{
     max-width: 264px;
+    
+}
+
+.item-section-maine:first-child{
+    width: calc((100% - 72px) / 4);
+
 }
 
 
-.subtitle-section-two{
+.subtitle-section-maine{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
+    
 }
-.text-section-two{
+.text-section-maine{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 
 }
 
-.section-three{
+.section-time{
     padding-bottom: 120px;
         padding-top: 120px;}
 
-.title-section-three {
+.title-section-time{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -232,9 +251,19 @@ overflow: hidden;
     
 }
 
-.list-section-three{
+.list-section-time{
    display: flex;
    gap: 24px;
+}
+
+.div-section-time{
+    padding: 32px 0;
+}
+
+.list-section-time:first-child{
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    
 }
 
 
@@ -242,18 +271,19 @@ overflow: hidden;
     background-color: #FFFFFF;
     
 }
-.subtitle-section-three{
+.subtitle-section-time{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
    color: #2e2f42; 
    text-align: center;
-   margin-top: 20px;
+margin-bottom: 8px;
+margin-top: 20px;
 }
 
 
-.text-section-three{
+.text-section-time{
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -263,23 +293,23 @@ overflow: hidden;
         margin-top: 20px;
     }
 
-    .section-four{
+    .section-portfolio{
         padding-top: 100px;
         padding-bottom: 70px;
     }
       
- .title-section-four {
+ .title-section-portfolio{
      font-size: 36px;
      line-height: 1.11;
      text-align: center;
      letter-spacing: 0.02em;
      text-transform: capitalize;
      color: #2e2f42;
-     margin-bottom: 30px;
+     margin-bottom: 72px;
  }
     
  
- .subtitle-section-four{
+ .subtitle-section-portfolio{
     font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -290,20 +320,33 @@ overflow: hidden;
         margin-left: 16px;
     }
     
-    .list-section-four{
+    .list-section-protfolio{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        column-gap: 24px;
     }
 
- .text-section-four{
+    .list-section-portfolio:first-child{
+        width: calc((100% - 48px) / 3);
+    }
+
+ .text-section-portfolio{
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
         margin-left: 16px;
         margin-bottom: 32px;
+
+    }
+
+    .div-section-portfolio{
+        padding: 32px 16px;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+        margin-bottom: 8px;
 
     }
  
@@ -322,7 +365,9 @@ overflow: hidden;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        margin-left: 156px;  
+        margin-left: 156px; 
+        display: inline-block;
+        margin-bottom: 16px;
 }
 .color-footer-logo{
     color: #f4f4fd;
